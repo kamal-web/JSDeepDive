@@ -1,0 +1,11 @@
+Lexical scope means JavaScript determines variable accessibility based on where functions and variables are declared in the source code.
+
+JavaScript maintains lexical environments containing variable bindings and references to their outer environments. When accessing a variable, JavaScript searches the current environment and then follows the scope chain.
+
+A closure is created when a function retains access to its surrounding lexical environment, even after the outer function has completed execution.
+
+For example, we can use closures to implement data privacy, function factories, event handlers and module patterns.
+
+In React, closures are also important because event handlers and callbacks retain values from the render in which they were created. This can sometimes lead to stale closure issues.
+
+Closures are useful for encapsulation, maintaining private state and creating reusable functions.
